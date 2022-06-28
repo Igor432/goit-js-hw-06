@@ -19,9 +19,7 @@ gallery.style.display = 'flex';
 gallery.style.gap = '20px';
 
 images.forEach((image) => {
-  const li = document.createElement("li")
- li.insertAdjacentHTML("afterbegin", `<img class="images" src="${image.url}" width=350px></img>`);
-gallery.append(li);
+  gallery.insertAdjacentHTML('afterbegin', `<li><img src=${image.url} alt=${image.alt} class='item' width='320'></li>`)
 })
 
 
