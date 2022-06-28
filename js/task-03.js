@@ -18,9 +18,18 @@ const gallery = document.querySelector('.gallery');
 gallery.style.display = 'flex';
 gallery.style.gap = '20px';
 
+const img = images.map((image) => `<li><img src=${image.url} alt=${image.alt} class='item' width='320'></li>`) 
+gallery.innerHTML = img;
+
+
+
+
+/*
 images.forEach((image) => {
-  gallery.insertAdjacentHTML('afterbegin', `<li><img src=${image.url} alt=${image.alt} class='item' width='320'></li>`)
+  gallery.insertAdjacentHTML('afterbegin', `<li></li>`)
 })
+
+*/
 
 
 

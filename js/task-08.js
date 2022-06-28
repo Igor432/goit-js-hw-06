@@ -9,6 +9,7 @@ function handleSubmit(event) {
     alert("все поля должны быть заполнены.");
   } else {
     const data = { email: email.value, password: password.value };
+    form.reset();
     console.log(data);
   }
 }
