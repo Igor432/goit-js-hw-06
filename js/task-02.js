@@ -15,11 +15,10 @@ const list = ingredients.map((item) => {
 const li = document.createElement('li');
 li.className = 'item';
 li.innerHTML = item;
-mainList.append(li);
+return li;
 })
 
-
-
+mainList.append(...list);
 
 
 

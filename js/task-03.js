@@ -24,14 +24,6 @@ gallery.insertAdjacentHTML('afterbegin', img)
 
 
 
-/*
-images.forEach((image) => {
-  gallery.insertAdjacentHTML('afterbegin', `<li></li>`)
-})
-
-*/
-
-
 
 
 
