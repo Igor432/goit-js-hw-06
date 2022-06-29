@@ -9,23 +9,16 @@ const ingredients = [
 ];
 
 const mainList = document.querySelector("#ingredients");
-;
 
 
-const list = ingredients.map((ingredient) => `<li class="item">${ingredient}</li>`);
-mainList.innerHTML = list;
-
-
-
-
-/*
-const list = ingredients.map((item) =>{
+const list = ingredients.map((item) => {
 const li = document.createElement('li');
+li.className = 'item';
 li.innerHTML = item;
-li.className = item;
 mainList.append(li);
 })
-*/
+
+
 
 
 

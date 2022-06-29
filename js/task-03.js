@@ -19,7 +19,7 @@ gallery.style.display = 'flex';
 gallery.style.gap = '20px';
 
 const img = images.map((image) => `<li><img src=${image.url} alt=${image.alt} class='item' width='320'></li>`) 
-gallery.innerHTML = img;
+gallery.insertAdjacentHTML('afterbegin', img)
 
 
 
